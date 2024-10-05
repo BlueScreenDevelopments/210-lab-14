@@ -7,6 +7,7 @@ private:
     int greenValue;
     int blueValue;
 
+
 public:
     // Constructor
     Color(int r = 0, int g = 0, int b = 0);
