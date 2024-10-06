@@ -1,16 +1,23 @@
 #ifndef COLOR_H
 #define COLOR_H
 
+//Mod Lab 16
+
 class Color {
 private:
     int redValue;
     int greenValue;
     int blueValue;
 
-    //TEST TEST TEST
 public:
-    // Constructor
-    Color(int r = 0, int g = 0, int b = 0);
+    // Default constructor
+    Color();
+
+    // Parameter constructor
+    Color(int r, int g, int b);
+
+    // Partial constructor
+    Color(int r, int g);
 
     // Set member functions
     void setRedValue(int r);

@@ -1,9 +1,15 @@
 #include "Color.h"
-#include <iostream>
-
 using namespace std;
+//Mod Lab 16
 
+// Default constructor
+Color::Color() : redValue(0), greenValue(0), blueValue(0) {}
+
+// Parameter constructor
 Color::Color(int r, int g, int b) : redValue(r), greenValue(g), blueValue(b) {}
+
+// Partial constructor
+Color::Color(int r, int g) : redValue(r), greenValue(g), blueValue(0) {}
 
 void Color::setRedValue(int r) {
     redValue = r;

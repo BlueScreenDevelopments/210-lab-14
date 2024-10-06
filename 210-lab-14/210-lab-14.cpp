@@ -1,21 +1,20 @@
 #include "Color.h"
+#include "Color.cpp">
 #include <iostream>
 
-using namespace std;
+// Mod 16 Lab
 
 int main() {
-    Color color1(255, 0, 0);  // Red
-    Color color2(0, 255, 0);  // Green
-    Color color3(0, 0, 255);  // Blue
-    Color color4(255, 255, 0);  // Yellow
-
-    cout << "Color 1: ";
+    Color color1;  // Default constructor
     color1.displayColor();
-    cout << "Color 2: ";
+
+    Color color2(255, 0, 0);  // Parameter constructor
     color2.displayColor();
-    cout << "Color 3: ";
+
+    Color color3(255, 255);  // Partial constructor
     color3.displayColor();
-    cout << "Color 4: ";
+
+    Color color4(0, 255, 0);  // Parameter constructor
     color4.displayColor();
 
     return 0;
